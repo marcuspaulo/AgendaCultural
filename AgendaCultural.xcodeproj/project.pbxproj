@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0A66C41C6A1EA4001BFC72 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A66C31C6A1EA4001BFC72 /* AgendaTableViewCell.swift */; };
+		2C0A66C91C6A2221001BFC72 /* jateado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66C81C6A2221001BFC72 /* jateado.jpg */; };
+		2C0A66CB1C6A2674001BFC72 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A66CA1C6A2674001BFC72 /* Evento.swift */; };
+		2C0A66D01C6A285F001BFC72 /* carnaval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66CD1C6A285F001BFC72 /* carnaval.jpg */; };
+		2C0A66D11C6A285F001BFC72 /* rock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66CE1C6A285F001BFC72 /* rock.jpg */; };
+		2C0A66D21C6A285F001BFC72 /* teatro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66CF1C6A285F001BFC72 /* teatro.jpg */; };
+		2C5FB23B1C668AE40037B375 /* Eventos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FB23A1C668AE40037B375 /* Eventos.jpg */; };
 		2C741F471C61842000400651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C741F461C61842000400651 /* AppDelegate.swift */; };
 		2C741F4C1C61842000400651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C741F4A1C61842000400651 /* Main.storyboard */; };
 		2C741F4E1C61842100400651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C741F4D1C61842100400651 /* Assets.xcassets */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0A66C31C6A1EA4001BFC72 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgendaTableViewCell.swift; path = Custom/AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		2C0A66C81C6A2221001BFC72 /* jateado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jateado.jpg; sourceTree = "<group>"; };
+		2C0A66CA1C6A2674001BFC72 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = Modelo/Evento.swift; sourceTree = "<group>"; };
+		2C0A66CD1C6A285F001BFC72 /* carnaval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carnaval.jpg; sourceTree = "<group>"; };
+		2C0A66CE1C6A285F001BFC72 /* rock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rock.jpg; sourceTree = "<group>"; };
+		2C0A66CF1C6A285F001BFC72 /* teatro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teatro.jpg; sourceTree = "<group>"; };
+		2C5FB23A1C668AE40037B375 /* Eventos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Eventos.jpg; sourceTree = "<group>"; };
 		2C741F431C61842000400651 /* AgendaCultural.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaCultural.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C741F461C61842000400651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C741F4B1C61842000400651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0A66C51C6A1EAC001BFC72 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A66C31C6A1EA4001BFC72 /* AgendaTableViewCell.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		2C0A66CC1C6A267A001BFC72 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A66CA1C6A2674001BFC72 /* Evento.swift */,
+			);
+			name = Modelo;
+			sourceTree = "<group>";
+		};
 		2C741F3A1C61842000400651 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +84,18 @@
 		2C741F451C61842000400651 /* AgendaCultural */ = {
 			isa = PBXGroup;
 			children = (
+				2C0A66CC1C6A267A001BFC72 /* Modelo */,
+				2C0A66C51C6A1EAC001BFC72 /* Custom */,
 				2C741F5A1C61846400400651 /* Controllers */,
 				2C741F461C61842000400651 /* AppDelegate.swift */,
 				2C741F4A1C61842000400651 /* Main.storyboard */,
 				2C741F4D1C61842100400651 /* Assets.xcassets */,
+				2C5FB23A1C668AE40037B375 /* Eventos.jpg */,
+				2C0A66CD1C6A285F001BFC72 /* carnaval.jpg */,
+				2C0A66CE1C6A285F001BFC72 /* rock.jpg */,
+				2C0A66CF1C6A285F001BFC72 /* teatro.jpg */,
 				2C741F4F1C61842100400651 /* LaunchScreen.storyboard */,
+				2C0A66C81C6A2221001BFC72 /* jateado.jpg */,
 				2C741F521C61842100400651 /* Info.plist */,
 			);
 			path = AgendaCultural;
@@ -131,8 +168,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0A66D21C6A285F001BFC72 /* teatro.jpg in Resources */,
 				2C741F511C61842100400651 /* LaunchScreen.storyboard in Resources */,
 				2C741F4E1C61842100400651 /* Assets.xcassets in Resources */,
+				2C0A66C91C6A2221001BFC72 /* jateado.jpg in Resources */,
+				2C0A66D11C6A285F001BFC72 /* rock.jpg in Resources */,
+				2C0A66D01C6A285F001BFC72 /* carnaval.jpg in Resources */,
+				2C5FB23B1C668AE40037B375 /* Eventos.jpg in Resources */,
 				2C741F4C1C61842000400651 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0A66CB1C6A2674001BFC72 /* Evento.swift in Sources */,
 				2C741F471C61842000400651 /* AppDelegate.swift in Sources */,
+				2C0A66C41C6A1EA4001BFC72 /* AgendaTableViewCell.swift in Sources */,
 				2C741F591C61846000400651 /* AgendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +339,7 @@
 				2C741F571C61842100400651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

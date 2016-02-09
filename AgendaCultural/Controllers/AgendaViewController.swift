@@ -12,11 +12,35 @@ class AgendaViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var eventos:[String] = ["Carnaval", "Festa", "Party"]
+    var eventos:[Evento] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let evento = Evento()
+        evento.nome = "Carnaval na Praça"
+        evento.local = "Praça da Apoteose"
+        evento.imagem = "carnaval.jpg"
+        eventos.append(evento)
+        
+        let evento2 = Evento()
+        evento2.nome = "Rock Brasil 2016"
+        evento2.local = "Estádio Municipal"
+        evento2.imagem = "rock.jpg"
+        eventos.append(evento2)
+        
+        let evento3 = Evento()
+        evento3.nome = "Teatro dos Artistas"
+        evento3.local = "Teatro Municipal"
+        evento3.imagem = "teatro.jpg"
+        eventos.append(evento3)
+        
+        let evento4 = Evento()
+        evento4.nome = "Evento aleatório"
+        evento4.local = "Lugar Qualquer"
+        evento4.imagem = "Eventos.jpg"
+        eventos.append(evento4)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -29,42 +53,18 @@ class AgendaViewController: UIViewController {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return eventos.count;
     }
-    //
-    //    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    //        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-    //
-    //        cell.textLabel?.text = self.items[indexPath.row]
-    //
-    //        return cell
-    //    }
-    
-    
+        
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell")! as UITableViewCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("ItemAgendaCell")! as! AgendaTableViewCell
         
-        cell.textLabel!.text = eventos[indexPath.row]
-        
-        //        cell.itemLabelCell.text = listaEmprestimo[indexPath.row].item
-        
-        
-        //        cell.imagemCell.image = UIImage(named: listaEmprestimo[indexPath.row].imagem)
-        
-        //        cell.imagemCell.image = UIImage(named: "sem-foto.jpg")
-        
-        //        cell.nomeLabelCell.text = listaEmprestimo[indexPath.row].nome
-        //        cell.dataDevolucaoLabelCell.text = listaEmprestimo[indexPath.row].dataDevolucao
-        
-        
-        //        if (dataDevolucaoLabelCell.text == NSDate()) {
-        //            cell.situacaoEmprestimoCell.image = UIImage(named: "red-bar.png")
-        //        }
-        
-        
+        cell.nomeEvento.text = eventos[indexPath.row].nome
+        cell.localEvento.text = eventos[indexPath.row].local
+        cell.imagemEvento.image = UIImage(named: eventos[indexPath.row].imagem)
         
         return cell
         
     }
-
+    
 
 }
