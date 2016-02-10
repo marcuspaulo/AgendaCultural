@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B0312D2B4051A03F529D94 /* Pods_AgendaCultural.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCD337355CCF2537AA99FCB /* Pods_AgendaCultural.framework */; };
 		2C0A66C41C6A1EA4001BFC72 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A66C31C6A1EA4001BFC72 /* AgendaTableViewCell.swift */; };
 		2C0A66C91C6A2221001BFC72 /* jateado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66C81C6A2221001BFC72 /* jateado.jpg */; };
 		2C0A66CB1C6A2674001BFC72 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A66CA1C6A2674001BFC72 /* Evento.swift */; };
 		2C0A66D01C6A285F001BFC72 /* carnaval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66CD1C6A285F001BFC72 /* carnaval.jpg */; };
 		2C0A66D11C6A285F001BFC72 /* rock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66CE1C6A285F001BFC72 /* rock.jpg */; };
 		2C0A66D21C6A285F001BFC72 /* teatro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0A66CF1C6A285F001BFC72 /* teatro.jpg */; };
+		2C5F6F8E1C6BF6AF00C1459F /* DetalheEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F6F8D1C6BF6AF00C1459F /* DetalheEventoViewController.swift */; };
 		2C5FB23B1C668AE40037B375 /* Eventos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FB23A1C668AE40037B375 /* Eventos.jpg */; };
 		2C741F471C61842000400651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C741F461C61842000400651 /* AppDelegate.swift */; };
 		2C741F4C1C61842000400651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C741F4A1C61842000400651 /* Main.storyboard */; };
@@ -22,12 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FCD337355CCF2537AA99FCB /* Pods_AgendaCultural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgendaCultural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0A66C31C6A1EA4001BFC72 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgendaTableViewCell.swift; path = Custom/AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		2C0A66C81C6A2221001BFC72 /* jateado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jateado.jpg; sourceTree = "<group>"; };
 		2C0A66CA1C6A2674001BFC72 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = Modelo/Evento.swift; sourceTree = "<group>"; };
 		2C0A66CD1C6A285F001BFC72 /* carnaval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carnaval.jpg; sourceTree = "<group>"; };
 		2C0A66CE1C6A285F001BFC72 /* rock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rock.jpg; sourceTree = "<group>"; };
 		2C0A66CF1C6A285F001BFC72 /* teatro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teatro.jpg; sourceTree = "<group>"; };
+		2C5F6F8D1C6BF6AF00C1459F /* DetalheEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalheEventoViewController.swift; path = Controllers/DetalheEventoViewController.swift; sourceTree = "<group>"; };
 		2C5FB23A1C668AE40037B375 /* Eventos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Eventos.jpg; sourceTree = "<group>"; };
 		2C741F431C61842000400651 /* AgendaCultural.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaCultural.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C741F461C61842000400651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		2C741F501C61842100400651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C741F521C61842100400651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C741F581C61846000400651 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgendaViewController.swift; path = Controllers/AgendaViewController.swift; sourceTree = "<group>"; };
+		A75D11DB1BE7FA676AB16396 /* Pods-AgendaCultural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaCultural.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaCultural/Pods-AgendaCultural.release.xcconfig"; sourceTree = "<group>"; };
+		AB56C744D55CCE3D28D8A981 /* Pods-AgendaCultural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaCultural.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaCultural/Pods-AgendaCultural.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B0312D2B4051A03F529D94 /* Pods_AgendaCultural.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23F1FAFE77749F833BA54039 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB56C744D55CCE3D28D8A981 /* Pods-AgendaCultural.debug.xcconfig */,
+				A75D11DB1BE7FA676AB16396 /* Pods-AgendaCultural.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2C0A66C51C6A1EAC001BFC72 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +86,8 @@
 			children = (
 				2C741F451C61842000400651 /* AgendaCultural */,
 				2C741F441C61842000400651 /* Products */,
+				23F1FAFE77749F833BA54039 /* Pods */,
+				CE8807537EF9FCBFA8639D90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +123,17 @@
 			isa = PBXGroup;
 			children = (
 				2C741F581C61846000400651 /* AgendaViewController.swift */,
+				2C5F6F8D1C6BF6AF00C1459F /* DetalheEventoViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CE8807537EF9FCBFA8639D90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FCD337355CCF2537AA99FCB /* Pods_AgendaCultural.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C741F551C61842100400651 /* Build configuration list for PBXNativeTarget "AgendaCultural" */;
 			buildPhases = (
+				7B83E17769200A7C68592A66 /* Check Pods Manifest.lock */,
 				2C741F3F1C61842000400651 /* Sources */,
 				2C741F401C61842000400651 /* Frameworks */,
 				2C741F411C61842000400651 /* Resources */,
+				9B7A5D91FA964DF7074C5D62 /* Embed Pods Frameworks */,
+				CBB1CFC5BF7332AE7B43468B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,12 +211,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B83E17769200A7C68592A66 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7A5D91FA964DF7074C5D62 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgendaCultural/Pods-AgendaCultural-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB1CFC5BF7332AE7B43468B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgendaCultural/Pods-AgendaCultural-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C741F3F1C61842000400651 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2C0A66CB1C6A2674001BFC72 /* Evento.swift in Sources */,
+				2C5F6F8E1C6BF6AF00C1459F /* DetalheEventoViewController.swift in Sources */,
 				2C741F471C61842000400651 /* AppDelegate.swift in Sources */,
 				2C0A66C41C6A1EA4001BFC72 /* AgendaTableViewCell.swift in Sources */,
 				2C741F591C61846000400651 /* AgendaViewController.swift in Sources */,
@@ -300,6 +379,7 @@
 		};
 		2C741F561C61842100400651 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB56C744D55CCE3D28D8A981 /* Pods-AgendaCultural.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AgendaCultural/Info.plist;
@@ -311,6 +391,7 @@
 		};
 		2C741F571C61842100400651 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75D11DB1BE7FA676AB16396 /* Pods-AgendaCultural.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AgendaCultural/Info.plist;
