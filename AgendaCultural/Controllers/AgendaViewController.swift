@@ -12,13 +12,17 @@ import SCLAlertView
 
 class AgendaViewController: UIViewController {
 
+    @IBOutlet weak var indicadorStatus: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var botaoTentarNovamente: UIButton!
+    @IBOutlet weak var imagemBackgroundError: UIImageView!
     var eventos:[Evento] = []
     var jsonArray:NSMutableArray?
 
     
     override func viewDidLoad() {
+        self.ocultaTableViewEmCasoDeErro(false)
         super.viewDidLoad()
 
         
@@ -29,11 +33,15 @@ class AgendaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func recarregar(sender: AnyObject) {
+        carregarEventos()
+    }
     //Função Responsável por Carregar os Eventos e converter para o Objeto Evento.
     func carregarEventos() {
-
+        self.startAnimating()
         Alamofire.request(.GET, "http://b737a92f.ngrok.io/events.json").responseJSON { response in
-
+            self.ocultaTableViewEmCasoDeErro(true)
+            
             let JSON = response.result.value
             switch response.result {
                 case .Success(_):
@@ -55,16 +63,43 @@ class AgendaViewController: UIViewController {
                         eventoJSON.hour = item["hour"]! as! String
                         self.eventos.append(eventoJSON)
                     }
+                self.ocultaTableViewEmCasoDeErro(false)
+                
                 case .Failure(_):
                     SCLAlertView().showError("Falha na Conexão", subTitle:"Não é possível estabelecer uma conexão com o servidor. Tente novamente!", closeButtonTitle:"OK")
+                    self.ocultaTableViewEmCasoDeErro(true)
             }
+            self.stopAnimating()
             self.tableView.reloadData()
         }
 
     }
+    
+    /*
+        Objetivo desta função é evitar código duplicado.
+        Toda vez que ocorrer um erro, devemos passar true, 
+        para que o tableView suma e os demais componentes apareçam
+    */
+    func ocultaTableViewEmCasoDeErro(condicao: Bool) {
+        self.tableView.hidden = condicao
+        self.imagemBackgroundError.hidden = !condicao
+        self.imagemBackgroundError.hidden = !condicao
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func startAnimating()
+    {
+        self.indicadorStatus.startAnimating()
+        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+    }
+    
+    func stopAnimating()
+    {
+        self.indicadorStatus.stopAnimating()
+        UIApplication.sharedApplication().endIgnoringInteractionEvents()
     }
     
 

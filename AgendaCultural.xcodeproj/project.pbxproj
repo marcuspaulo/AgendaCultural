@@ -21,6 +21,11 @@
 		2C741F4E1C61842100400651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C741F4D1C61842100400651 /* Assets.xcassets */; };
 		2C741F511C61842100400651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C741F4F1C61842100400651 /* LaunchScreen.storyboard */; };
 		2C741F591C61846000400651 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C741F581C61846000400651 /* AgendaViewController.swift */; };
+		2CC2EA7A1C6D491C006A7646 /* mascara-teatro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2EA791C6D491C006A7646 /* mascara-teatro.jpg */; };
+		2CC2EA7C1C6D4978006A7646 /* teatro-back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2EA7B1C6D4978006A7646 /* teatro-back.jpg */; };
+		2CC2EA7E1C6D4CE0006A7646 /* icone-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2EA7D1C6D4CE0006A7646 /* icone-top.png */; };
+		2CC2EA801C6D5833006A7646 /* mascara-tetro-inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2EA7F1C6D5833006A7646 /* mascara-tetro-inicio.png */; };
+		2CC2EA821C6D58BE006A7646 /* mascara-tetro-inicio-trans.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2EA811C6D58BE006A7646 /* mascara-tetro-inicio-trans.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		2C741F501C61842100400651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C741F521C61842100400651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C741F581C61846000400651 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgendaViewController.swift; path = Controllers/AgendaViewController.swift; sourceTree = "<group>"; };
+		2CC2EA791C6D491C006A7646 /* mascara-teatro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mascara-teatro.jpg"; sourceTree = "<group>"; };
+		2CC2EA7B1C6D4978006A7646 /* teatro-back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "teatro-back.jpg"; sourceTree = "<group>"; };
+		2CC2EA7D1C6D4CE0006A7646 /* icone-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone-top.png"; sourceTree = "<group>"; };
+		2CC2EA7F1C6D5833006A7646 /* mascara-tetro-inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mascara-tetro-inicio.png"; sourceTree = "<group>"; };
+		2CC2EA811C6D58BE006A7646 /* mascara-tetro-inicio-trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mascara-tetro-inicio-trans.png"; sourceTree = "<group>"; };
 		A75D11DB1BE7FA676AB16396 /* Pods-AgendaCultural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaCultural.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaCultural/Pods-AgendaCultural.release.xcconfig"; sourceTree = "<group>"; };
 		AB56C744D55CCE3D28D8A981 /* Pods-AgendaCultural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaCultural.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaCultural/Pods-AgendaCultural.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +120,11 @@
 				2C741F4D1C61842100400651 /* Assets.xcassets */,
 				2C5FB23A1C668AE40037B375 /* Eventos.jpg */,
 				2C0A66CD1C6A285F001BFC72 /* carnaval.jpg */,
+				2CC2EA7B1C6D4978006A7646 /* teatro-back.jpg */,
+				2CC2EA7F1C6D5833006A7646 /* mascara-tetro-inicio.png */,
+				2CC2EA791C6D491C006A7646 /* mascara-teatro.jpg */,
+				2CC2EA811C6D58BE006A7646 /* mascara-tetro-inicio-trans.png */,
+				2CC2EA7D1C6D4CE0006A7646 /* icone-top.png */,
 				2C0A66CE1C6A285F001BFC72 /* rock.jpg */,
 				2C0A66CF1C6A285F001BFC72 /* teatro.jpg */,
 				2C741F4F1C61842100400651 /* LaunchScreen.storyboard */,
@@ -199,10 +214,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0A66D21C6A285F001BFC72 /* teatro.jpg in Resources */,
+				2CC2EA821C6D58BE006A7646 /* mascara-tetro-inicio-trans.png in Resources */,
+				2CC2EA7C1C6D4978006A7646 /* teatro-back.jpg in Resources */,
+				2CC2EA7A1C6D491C006A7646 /* mascara-teatro.jpg in Resources */,
 				2C741F511C61842100400651 /* LaunchScreen.storyboard in Resources */,
 				2C741F4E1C61842100400651 /* Assets.xcassets in Resources */,
 				2C0A66C91C6A2221001BFC72 /* jateado.jpg in Resources */,
+				2CC2EA801C6D5833006A7646 /* mascara-tetro-inicio.png in Resources */,
 				2C0A66D11C6A285F001BFC72 /* rock.jpg in Resources */,
+				2CC2EA7E1C6D4CE0006A7646 /* icone-top.png in Resources */,
 				2C0A66D01C6A285F001BFC72 /* carnaval.jpg in Resources */,
 				2C5FB23B1C668AE40037B375 /* Eventos.jpg in Resources */,
 				2C741F4C1C61842000400651 /* Main.storyboard in Resources */,
