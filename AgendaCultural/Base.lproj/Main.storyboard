@@ -145,7 +145,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-detail-blur.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j4j-zl-AvZ">
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-detail-blur.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j4j-zl-AvZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-oY-7Go">
@@ -224,12 +224,6 @@
                                 <color key="textColor" red="0.99145920740000004" green="1" blue="0.98939122840000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ending_date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SKF-d4-ioK">
-                                <rect key="frame" x="188" y="540" width="187" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.99145920740000004" green="1" blue="0.98939122840000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swv-8z-iBd">
                                 <rect key="frame" x="6" y="397" width="357" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -248,14 +242,24 @@
                                 <color key="textColor" red="0.99145920740000004" green="1" blue="0.98939122840000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ending_date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SKF-d4-ioK">
+                                <rect key="frame" x="188" y="540" width="167" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.99145920740000004" green="1" blue="0.98939122840000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="placeLabel" destination="Swv-8z-iBd" id="4Ql-rM-oYY"/>
-                        <outlet property="priceLabel" destination="f3p-oY-7Go" id="NuO-L7-Zcv"/>
-                        <outlet property="titleLabel" destination="ng0-XV-Dq7" id="gm3-jd-mjM"/>
+                        <outlet property="addressLabel" destination="Swv-8z-iBd" id="aYk-3P-ef3"/>
+                        <outlet property="categoryLabel" destination="2Jo-hX-tbx" id="A3z-yi-1OX"/>
+                        <outlet property="descriptionLabel" destination="F46-gL-c7h" id="ekO-gb-JOd"/>
+                        <outlet property="endingDateLabel" destination="SKF-d4-ioK" id="I6g-5m-qTJ"/>
+                        <outlet property="openingDateLabel" destination="pCj-mP-FAR" id="k0y-gb-00q"/>
+                        <outlet property="priceLabel" destination="f3p-oY-7Go" id="6Vp-NH-Fvp"/>
+                        <outlet property="titleLabel" destination="ng0-XV-Dq7" id="jjN-Rx-mWR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h11-M1-NEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
