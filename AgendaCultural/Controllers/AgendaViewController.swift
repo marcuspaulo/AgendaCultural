@@ -39,7 +39,9 @@ class AgendaViewController: UIViewController {
     //Função Responsável por Carregar os Eventos e converter para o Objeto Evento.
     func carregarEventos() {
         self.startAnimating()
-        Alamofire.request(.GET, "http://b737a92f.ngrok.io/events.json").responseJSON { response in
+        
+        Alamofire.request(.GET, "http://localhost:3000/events.json").responseJSON { response in
+//        Alamofire.request(.GET, "http://b737a92f.ngrok.io/events.json").responseJSON { response in
             self.ocultaTableViewEmCasoDeErro(true)
             
             let JSON = response.result.value
@@ -111,9 +113,21 @@ class AgendaViewController: UIViewController {
         
         let cell = self.tableView.dequeueReusableCellWithIdentifier("ItemAgendaCell")! as! AgendaTableViewCell
         
+        print(eventos[indexPath.row].photo)
         cell.nomeEvento.text = eventos[indexPath.row].title
         cell.localEvento.text = eventos[indexPath.row].place
-//        cell.imagemEvento.image = UIImage(named: eventos[indexPath.row].imagem)
+        
+        
+        //Convertendo de Imagem Base 64
+        let encodedImageData = eventos[indexPath.row].photo
+        let decodedData = NSData(base64EncodedString: encodedImageData, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
+
+        var decodedimage = UIImage(named: "mascara-teatro.jpg")
+        if (decodedData != nil) {
+            decodedimage = UIImage(data: decodedData!)
+            
+        }
+        cell.imagemEvento.image = decodedimage! as UIImage
         
         return cell
     }

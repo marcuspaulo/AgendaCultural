@@ -47,6 +47,7 @@
 		2C741F501C61842100400651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C741F521C61842100400651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C741F581C61846000400651 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgendaViewController.swift; path = Controllers/AgendaViewController.swift; sourceTree = "<group>"; };
+		2CB1660E1C79FAAA00453382 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		2CC2EA791C6D491C006A7646 /* mascara-teatro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mascara-teatro.jpg"; sourceTree = "<group>"; };
 		2CC2EA7B1C6D4978006A7646 /* teatro-back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "teatro-back.jpg"; sourceTree = "<group>"; };
 		2CC2EA7D1C6D4CE0006A7646 /* icone-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone-top.png"; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		2C741F3A1C61842000400651 = {
 			isa = PBXGroup;
 			children = (
+				2CB1660E1C79FAAA00453382 /* MyPlayground.playground */,
 				2C741F451C61842000400651 /* AgendaCultural */,
 				2C741F441C61842000400651 /* Products */,
 				23F1FAFE77749F833BA54039 /* Pods */,
